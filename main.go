@@ -13,9 +13,10 @@ import (
 var db *sql.DB
 
 func main() {
-
+	////Uncomment below to use CLI interface.
 	// cmd.Execute()
 
+	////Below section will use API interface.
 	apiControllers.HandleRequests()
 	//keep running until next line key press
 	fmt.Scanln()
